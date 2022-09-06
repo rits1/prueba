@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+.caja-logo{
+    text-align: center;
+}
+
+
+.logo{
+    width:50%;
+}
+
+
+a{
+    background-color: rgb(188, 187, 187);
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+#carrusel{
+    display: none;
+}
+
+.caja-img-texto{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+
+.img-article{
+    width: 100%;
+}
+
+@media (min-width:768px){
+    a{
+        display: inline;
+    }
+}
+
+@media (min-width: 1024px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .caja-logo{
+        text-align: left;
+    }
+    .logo{
+        width:50%;
+    }
+
+    #carrusel{
+        display: block;
+    }
+    .img-article{
+        width: 30%;
+    }
+
+    .caja-img-texto{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
